@@ -4,10 +4,10 @@ sum = 0
 
 if n > 0 :
     while count < n :
-        if (count % 2) == 0 :
+        if (count % 2) == 0 : #solo suma los pares
             sum += count
             count += 1
-        else :
+        else : #los impares se los salta
             count += 1
             continue
     print(sum) 
