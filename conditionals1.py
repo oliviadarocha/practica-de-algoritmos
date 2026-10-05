@@ -1,4 +1,4 @@
-n = int(input('Ingres los puntos que tiene: '))
+n = int(input('Ingrese los puntos que tiene: '))
 
 if (1 <= n) and (n <= 50) :
     print(f"No hay premios para {n} pts")
