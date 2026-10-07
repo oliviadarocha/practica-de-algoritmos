@@ -1,4 +1,4 @@
-n = int(input('Ingrese un numero: '))
+n = int(input('Ingrese un numero entero positivo: '))
 count = 2
 sum = 0
 
