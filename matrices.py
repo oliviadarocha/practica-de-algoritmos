@@ -9,6 +9,6 @@ A = [[2, 1, 0], [1, 3, 4],  [5, 2, 1]]
 #         fila_B.append(elemento_nuevo)
 #     B.append(fila_B)
  
-B = [[elemento * n for elemento in fila] for fila in A]
+B = [[elemento * n for elemento in fila] for fila in A] #otra forma de hacerlo con python
     
 print(B)
