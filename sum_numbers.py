@@ -15,6 +15,3 @@ elif n == 0 :
     print(0)
 else :
     print('Ingrese un numero entero positivo.')   
-
-
-

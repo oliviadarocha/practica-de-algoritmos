@@ -40,59 +40,59 @@ LIBRE DE CUADRADOS: No es divisible por ningún cuadrado perfecto > 1
 • Ejemplos: 2, 3, 5, 6, 7, 10
 • NO libres: 4 (divisible por 4), 8 (divisible por 4), 9 (divisible por 9)
 """
-import math
+# import math
 
-def analizar_numero(n):
-    propiedades = []
-    if n > 1:
-        es_primo = True
-        for i in range(2, n):
-            if n % i == 0:
-                es_primo = False
-                break
-        if es_primo:
-            propiedades.append("Primo")
-        else:
-            propiedades.append("Compuesto")
-
-
-    k = int(math.sqrt(n))
-
-    if k * (k + 1) == n:
-        propiedades.append("Oblongo") 
-
-    if str(n) == str(n)[::-1]:
-        propiedades.append("Palíndromo") 
+# def analizar_numero(n):
+#     propiedades = []
+#     if n > 1:
+#         es_primo = True
+#         for i in range(2, n):
+#             if n % i == 0:
+#                 es_primo = False
+#                 break
+#         if es_primo:
+#             propiedades.append("Primo")
+#         else:
+#             propiedades.append("Compuesto")
 
 
-    suma_div = 0
-    for i in range(1, n):
-        if n % i == 0:
-            suma_div += i     
-    if suma_div == n:
-        propiedades.append("Perfecto")
-    elif suma_div > n:
-        propiedades.append("Abundante")
-    else:
-        propiedades.append("Deficiente")    
+#     k = int(math.sqrt(n))
+
+#     if k * (k + 1) == n:
+#         propiedades.append("Oblongo") 
+
+#     if str(n) == str(n)[::-1]:
+#         propiedades.append("Palíndromo") 
+
+
+#     suma_div = 0
+#     for i in range(1, n):
+#         if n % i == 0:
+#             suma_div += i     
+#     if suma_div == n:
+#         propiedades.append("Perfecto")
+#     elif suma_div > n:
+#         propiedades.append("Abundante")
+#     else:
+#         propiedades.append("Deficiente")    
     
     
-    if k * k == n:
-        propiedades.append("Cuadrado")  
-    libre = True
+#     if k * k == n:
+#         propiedades.append("Cuadrado")  
+#     libre = True
 
-    for i in range(2, int(math.sqrt(n)) + 1):
-        if n % (i * i) == 0:
-            libre = False
-            break
-    if libre:
-        propiedades.append("Libre de cuadrados")
-    return propiedades
+#     for i in range(2, int(math.sqrt(n)) + 1):
+#         if n % (i * i) == 0:
+#             libre = False
+#             break
+#     if libre:
+#         propiedades.append("Libre de cuadrados")
+#     return propiedades
 
-num = int(input("Ingrese un número entero positivo: ")) 
-print(f"Resultados para {num}:")
-for p in analizar_numero(num):
-    print("-", p)
+# num = int(input("Ingrese un número entero positivo: ")) 
+# print(f"Resultados para {num}:")
+# for p in analizar_numero(num):
+#     print("-", p)
 
 
 
