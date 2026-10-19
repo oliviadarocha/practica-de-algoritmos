@@ -120,22 +120,22 @@ Output esperado:
 [A,B,C]
 A=[8,4,0]
 """
-def multiplicar_matriz_por_escalar(escalar, matriz):
-   resultado = []
-   for fila in matriz:
-       nueva_fila = []
-       for elemento in fila:
-           nueva_fila.append(elemento * escalar)
-       resultado.append(nueva_fila)
-   return resultado
+# def multiplicar_matriz_por_escalar(escalar, matriz):
+#    resultado = []
+#    for fila in matriz:
+#        nueva_fila = []
+#        for elemento in fila:
+#            nueva_fila.append(elemento * escalar)
+#        resultado.append(nueva_fila)
+#    return resultado
 
-escalar = int(input("Ingrese un número escalar: "))
-matriz_A = [[2, 1, 0], [1, 3, 4], [5, 2, 1]]
+# escalar = int(input("Ingrese un número escalar: "))
+# matriz_A = [[2, 1, 0], [1, 3, 4], [5, 2, 1]]
 
-resultado = multiplicar_matriz_por_escalar(escalar, matriz_A)
+# resultado = multiplicar_matriz_por_escalar(escalar, matriz_A)
 
-print("Matriz resultante:")
-print(resultado)
+# print("Matriz resultante:")
+# print(resultado)
 
 
 

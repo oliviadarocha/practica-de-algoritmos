@@ -1,14 +1,14 @@
 #para matrices 2x2
 
 A = [[2,3] , [5,6]]
-determinante = (A[0][0] * A[1][1]) - (A[0][1] * A[1][0])
+determinante_2x2 = (A[0][0] * A[1][1]) - (A[0][1] * A[1][0])
 
-#para matrices nxn
+#para matrices nxn por el metodo de cofactores
 
-def obtener_submatriz(matriz, fila_eliminar, col_eliminar):
-    
-    # Función auxiliar: Crea una submatriz más pequeña
-    # eliminando una fila y una columna específicas.
+def obtener_submatriz(matriz, fila_eliminar, col_eliminar): 
+    #Primero hay que ir convirtiendo es una 2x2
+    #Función auxiliar: Crea una submatriz más pequeña
+    #eliminando una fila y una columna específicas.
     
     submatriz = []
     for i in range(len(matriz)):
@@ -23,18 +23,18 @@ def obtener_submatriz(matriz, fila_eliminar, col_eliminar):
 
 def determinante(matriz):
     
-    # Función principal: Calcula el determinante de cualquier 
-    # matriz cuadrada NxN de forma recursiva.
+    #Función principal: Calcula el determinante de cualquier 
+    #matriz cuadrada nxn.
     
-    # Caso base 1: Matriz de 1x1
+    #Caso 1: Matriz de 1x1
     if len(matriz) == 1:
         return matriz[0][0]
     
-    # Caso base 2: Matriz de 2x2 (la fórmula que construiste)
+    #Caso 2: Matriz de 2x2
     if len(matriz) == 2:
         return (matriz[0][0] * matriz[1][1]) - (matriz[0][1] * matriz[1][0])
     
-    # Caso general (3x3 o mayor): Expansión por cofactores
+    # Caso general: por cofactores
     det = 0
     for col in range(len(matriz)):
         # 1. Reducimos la matriz quitando la fila 0 y la columna 'col'
